@@ -6,7 +6,7 @@ $tunnus = $_SESSION["tunnus"];
 if (!isset($kayttajat[$tunnus])) {
     echo "Et ole kirjautunut! Ohjataan kirjautumissivulle";
     sleep(3);
-    header("Location: index.php");
+    header("Location: index.html");
 }
 echo "<p>Tunnus: <b>$tunnus</b></p>";
 echo "<p><a href=\"turnauslista.php\">Turnauslista</a></br>";
